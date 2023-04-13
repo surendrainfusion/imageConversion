@@ -4,7 +4,7 @@ import convertToAllFormats from "./src/Functions/sharp_image_conversion.js";
 
 const app = express();
 
-let inputFile = "./src/assets/Images/download.jpg";
+let inputFile = "./src/assets/Images/flag.png";
 
 //Convert to AllFormats
 convertToAllFormats(inputFile)

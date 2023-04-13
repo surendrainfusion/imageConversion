@@ -14,7 +14,7 @@ Jimp.read(filePath)
     image.writeAsync(`${outputFile}${fileName}.png`),
     image.writeAsync(`${outputFile}${fileName}.bmp`),
     image.writeAsync(`${outputFile}${fileName}.webp`),
-    image.writeAsync(`${outputFile}${fileName}.jpg`)
+    image.writeAsync(`${outputFile}${fileName}.jpg`),
   ]);
 })
 .then(() => {

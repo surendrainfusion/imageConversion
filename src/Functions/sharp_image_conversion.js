@@ -28,13 +28,13 @@ function convertImage(inputPath) {
     .catch((err) => console.log("Error:", err));
 
   sharp(inputPath)
-    .webp()
+    .webp({ quality: 100 })
     .toFile(`${ouputFile}.webp`)
     .then((info) => console.log("Image has been converted to webp format"))
     .catch((err) => console.log("Error:", err));
 
   sharp(inputPath)
-    .tiff()
+    .tiff({ quality: 100 })
     .toFile(`${ouputFile}.tiff`)
     .then((info) => console.log("Image has been converted to tiff format"))
     .catch((err) => console.log("Error:", err));
