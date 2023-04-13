@@ -11,6 +11,7 @@ Jimp.read(filePath)
 
   // Convert the image to PNG, BMP, and TIFF formats in parallel
   return Promise.all([
+    image.blur(10),
     image.writeAsync(`${outputFile}${fileName}.png`),
     image.writeAsync(`${outputFile}${fileName}.bmp`),
     image.writeAsync(`${outputFile}${fileName}.webp`),
